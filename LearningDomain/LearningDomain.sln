@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningDomain", "LearningD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLogic", "ApplicationLogic\ApplicationLogic.csproj", "{4F0472B3-8075-44E1-BF7A-1A116DE8627D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectGettersSetters", "ObjectGettersSetters\ObjectGettersSetters.csproj", "{65DE04F5-2DCD-4A39-83E7-F76F4BEC1917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{0BEE0111-5789-441A-A6D9-A899E0819925}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{4F0472B3-8075-44E1-BF7A-1A116DE8627D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F0472B3-8075-44E1-BF7A-1A116DE8627D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F0472B3-8075-44E1-BF7A-1A116DE8627D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DE04F5-2DCD-4A39-83E7-F76F4BEC1917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DE04F5-2DCD-4A39-83E7-F76F4BEC1917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DE04F5-2DCD-4A39-83E7-F76F4BEC1917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DE04F5-2DCD-4A39-83E7-F76F4BEC1917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BEE0111-5789-441A-A6D9-A899E0819925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BEE0111-5789-441A-A6D9-A899E0819925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BEE0111-5789-441A-A6D9-A899E0819925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BEE0111-5789-441A-A6D9-A899E0819925}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
