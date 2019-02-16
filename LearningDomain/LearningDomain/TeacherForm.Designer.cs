@@ -293,5 +293,7 @@
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.ErrorProvider erpProvider;
+
     }
 }

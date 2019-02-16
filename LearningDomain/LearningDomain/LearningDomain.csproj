@@ -97,5 +97,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApplicationLogic\ApplicationLogic.csproj">
+      <Project>{4f0472b3-8075-44e1-bf7a-1a116de8627d}</Project>
+      <Name>ApplicationLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{0bee0111-5789-441a-a6d9-a899e0819925}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjectGettersSetters\ObjectGettersSetters.csproj">
+      <Project>{65de04f5-2dcd-4a39-83e7-f76f4bec1917}</Project>
+      <Name>ObjectGettersSetters</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
