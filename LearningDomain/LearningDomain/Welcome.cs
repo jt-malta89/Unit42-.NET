@@ -16,5 +16,12 @@ namespace LearningDomain
         {
             InitializeComponent();
         }
+
+        private void btnTeacher_Click(object sender, EventArgs e)
+        {
+            TeacherForm myTeacherForm = new TeacherForm();
+            myTeacherForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -192,7 +192,9 @@ namespace LearningDomain
         {
             //calling the clear component method to clear text from the latter
             clearComponents();
+
             String userInput = Microsoft.VisualBasic.Interaction.InputBox("Please enter Teacher ID Card", "Search Teacher Record");
+
             var teachers = TeacherService.Load(userInput);
             //Checking if user input matches a record in our teacher folder
             //and is not null.
@@ -207,20 +209,16 @@ namespace LearningDomain
                 this.txtDOB.Text = Convert.ToString(teachers.DateOfBirth);
                 this.txtContactNo.Text = Convert.ToString(teachers.ContactNo);
                 this.txtSalary.Text = Convert.ToString(teachers.Salary);
-
                 //the update button will be tured to enabled.
                 this.btnUpdate.Enabled = true;
             }
-
             else
             {
                 MessageBox.Show("No Records Found with given Teacher IDCard: " + userInput, "Search output");
-
                 this.btnUpdate.Enabled = false;
 
             }
         }
-
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
@@ -427,7 +425,7 @@ namespace LearningDomain
                         //Error message to the user
                         MessageBox.Show("Teacher's subject is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the subject component with the specified error
-                        this.erpProvider.SetError(this.txtContactNo, "Teacher's Contact Number is required.");            
+                        this.erpProvider.SetError(this.txtContactNo, "Teacher's Contact Number is required.");
                         quit = true;
                         break;
                     }
@@ -509,3 +507,4 @@ namespace LearningDomain
             AddTeacher();
         }
     }
+}
