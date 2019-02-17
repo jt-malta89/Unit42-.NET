@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
@@ -52,6 +53,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblTeacherForm = new System.Windows.Forms.Label();
+            this.erpProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.erpProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -257,6 +260,10 @@
             this.lblTeacherForm.TabIndex = 64;
             this.lblTeacherForm.Text = "Teacher";
             // 
+            // errorProvider1
+            // 
+            this.erpProvider.ContainerControl = this;
+            // 
             // TeacherForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,6 +295,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "TeacherForm";
             this.Text = "Learning Domain Ltd.";
+            ((System.ComponentModel.ISupportInitialize)(this.erpProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,8 +325,8 @@
         private System.Windows.Forms.Label lblSurname;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.ErrorProvider erpProvider;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblTeacherForm;
+        private System.Windows.Forms.ErrorProvider erpProvider;
     }
 }

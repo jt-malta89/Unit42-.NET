@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="StudentService.cs" />
     <Compile Include="TeacherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

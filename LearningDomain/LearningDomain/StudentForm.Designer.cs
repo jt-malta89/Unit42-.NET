@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.txtContactNo = new System.Windows.Forms.MaskedTextBox();
             this.lblContactNo = new System.Windows.Forms.Label();
             this.txtDOB = new System.Windows.Forms.MaskedTextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -50,6 +51,8 @@
             this.lblName = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblStudentForm = new System.Windows.Forms.Label();
+            this.erpProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.erpProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSearch
@@ -79,13 +82,13 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // maskedTextBox1
+            // txtContactNo
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(109, 258);
-            this.maskedTextBox1.Mask = "00000000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 57;
+            this.txtContactNo.Location = new System.Drawing.Point(109, 258);
+            this.txtContactNo.Mask = "00000000";
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(100, 20);
+            this.txtContactNo.TabIndex = 57;
             // 
             // lblContactNo
             // 
@@ -239,6 +242,10 @@
             this.lblStudentForm.TabIndex = 63;
             this.lblStudentForm.Text = "Student";
             // 
+            // erpProvider
+            // 
+            this.erpProvider.ContainerControl = this;
+            // 
             // StudentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,7 +256,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.lblContactNo);
             this.Controls.Add(this.txtDOB);
             this.Controls.Add(this.btnUpdate);
@@ -268,7 +275,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "StudentForm";
             this.Text = "Learning Domain Ltd.";
-            this.Load += new System.EventHandler(this.StudentForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.erpProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,7 +286,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox txtContactNo;
         private System.Windows.Forms.Label lblContactNo;
         private System.Windows.Forms.MaskedTextBox txtDOB;
         private System.Windows.Forms.Button btnUpdate;
@@ -298,5 +305,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblStudentForm;
+        private System.Windows.Forms.ErrorProvider erpProvider;
     }
 }
