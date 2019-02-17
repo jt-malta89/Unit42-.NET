@@ -280,9 +280,9 @@ namespace LearningDomain
                     if (TeacherID == "")
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's name is required. Please do not leave the name empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's ID Card is required. Please do not leave the name empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the name component with the specified error
-                        this.erpProvider.SetError(this.txtIDCard, "Teacher's name is required.");
+                        this.erpProvider.SetError(this.txtIDCard, "Teacher's ID Card is required.");
                         quit = true;
                         break;
                     }
@@ -330,7 +330,7 @@ namespace LearningDomain
                         //Error message to the user
                         MessageBox.Show("Teacher's surname is required. Please do not leave the name empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the name component with the specified error
-                        this.erpProvider.SetError(this.txtSurname, "Teacher's Surname is required.");
+                        this.erpProvider.SetError(this.txtSurname, "Teacher's surname is required.");
                         quit = true;
                         break;
                     }
@@ -352,9 +352,9 @@ namespace LearningDomain
                     if (address == "")
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's Address is required. Please do not leave the Address empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's address is required. Please do not leave the Address empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the Address component with the specified error
-                        this.erpProvider.SetError(this.txtAddress, "Teacher's Address is required.");
+                        this.erpProvider.SetError(this.txtAddress, "Teacher's address is required.");
                         quit = true;
                         break;
                     }
@@ -400,9 +400,9 @@ namespace LearningDomain
                     if (TeacherClass == "")
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's name is required. Please do not leave the name empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's class is required. Please do not leave the name empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the name component with the specified error
-                        this.erpProvider.SetError(this.txtClass, "Teacher's name is required.");
+                        this.erpProvider.SetError(this.txtClass, "Teacher's class is required.");
                         quit = true;
                         break;
                     }
@@ -423,9 +423,9 @@ namespace LearningDomain
                     if (contact == 0)
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's subject is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's contact is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the subject component with the specified error
-                        this.erpProvider.SetError(this.txtContactNo, "Teacher's Contact Number is required.");
+                        this.erpProvider.SetError(this.txtContactNo, "Teacher's contact Number is required.");
                         quit = true;
                         break;
                     }
@@ -446,9 +446,9 @@ namespace LearningDomain
                     if (dob > DateTime.Today)
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's subject is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's date of birth is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the subject component with the specified error
-                        this.erpProvider.SetError(this.txtDOB, "Teacher's subject is required.");
+                        this.erpProvider.SetError(this.txtDOB, "Teacher's date of birth is required.");
                         quit = true;
                         break;
                     }
@@ -469,9 +469,9 @@ namespace LearningDomain
                     if (salary == 0)
                     {
                         //Error message to the user
-                        MessageBox.Show("Teacher's subject is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Teacher's salary is required. Please do not leave the subject empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         //Setting the Error provider to the subject component with the specified error
-                        this.erpProvider.SetError(this.txtSalary, "Teacher's Salary is required.");
+                        this.erpProvider.SetError(this.txtSalary, "Teacher's salary is required.");
                         quit = true;
                         break;
                     }
@@ -496,7 +496,7 @@ namespace LearningDomain
                 myTeacher.ContactNo = contact;
                 myTeacher.DateOfBirth = dob;
                 TeacherService.Save(myTeacher);
-                MessageBox.Show("New Teacher successfully added to the datase", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("New Teacher successfully added to the database", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 clearComponents();
 
             } while (quit == true);
