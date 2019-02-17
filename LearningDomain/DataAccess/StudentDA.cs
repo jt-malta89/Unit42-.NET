@@ -12,7 +12,7 @@ namespace DataAccess
     public class StudentDA
     {
         //Declaring constant variable to create Student Folder path in the solution root folder
-        private const string StudentFolder = "data\\student\\";
+        private const string StudentFolder = "data\\students\\";
 
         //Declaring constant variable to set the TeacherFile extension to .bin
         private const string StudentFileTypeExtension = ".bin";
@@ -26,7 +26,7 @@ namespace DataAccess
             //Checking into the Operating System directory if the Student folder exists or not
             if (!Directory.Exists(StudentFolder))
             {
-                //If the folder does not exists the application will add the Teacher folder into the director
+                //If the folder does not exists the application will add the Student folder into the director
                 Directory.CreateDirectory(StudentFolder);
             }
 

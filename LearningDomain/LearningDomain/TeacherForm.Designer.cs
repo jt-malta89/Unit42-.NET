@@ -65,6 +65,7 @@
             this.btnUpdate.TabIndex = 43;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSearch
             // 
@@ -74,6 +75,7 @@
             this.btnSearch.TabIndex = 42;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnClear
             // 
@@ -83,6 +85,7 @@
             this.btnClear.TabIndex = 41;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAdd
             // 
@@ -92,6 +95,7 @@
             this.btnAdd.TabIndex = 40;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtContactNo
             // 
@@ -260,7 +264,7 @@
             this.lblTeacherForm.TabIndex = 64;
             this.lblTeacherForm.Text = "Teacher";
             // 
-            // errorProvider1
+            // erpProvider
             // 
             this.erpProvider.ContainerControl = this;
             // 
