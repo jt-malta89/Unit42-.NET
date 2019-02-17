@@ -23,5 +23,10 @@ namespace LearningDomain
             myWelcome.Show();
             this.Hide();
         }
+
+        private void StudentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

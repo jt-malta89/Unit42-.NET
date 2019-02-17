@@ -30,11 +30,12 @@
         {
             this.btnTeacher = new System.Windows.Forms.Button();
             this.btnStudent = new System.Windows.Forms.Button();
+            this.lblWelcomeForm = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTeacher
             // 
-            this.btnTeacher.Location = new System.Drawing.Point(104, 344);
+            this.btnTeacher.Location = new System.Drawing.Point(32, 152);
             this.btnTeacher.Name = "btnTeacher";
             this.btnTeacher.Size = new System.Drawing.Size(75, 23);
             this.btnTeacher.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // btnStudent
             // 
-            this.btnStudent.Location = new System.Drawing.Point(229, 344);
+            this.btnStudent.Location = new System.Drawing.Point(168, 152);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(75, 23);
             this.btnStudent.TabIndex = 1;
@@ -52,16 +53,28 @@
             this.btnStudent.UseVisualStyleBackColor = true;
             this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
+            // lblWelcomeForm
+            // 
+            this.lblWelcomeForm.AutoSize = true;
+            this.lblWelcomeForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWelcomeForm.Location = new System.Drawing.Point(27, 54);
+            this.lblWelcomeForm.Name = "lblWelcomeForm";
+            this.lblWelcomeForm.Size = new System.Drawing.Size(108, 25);
+            this.lblWelcomeForm.TabIndex = 65;
+            this.lblWelcomeForm.Text = "Welcome";
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 441);
+            this.ClientSize = new System.Drawing.Size(284, 211);
+            this.Controls.Add(this.lblWelcomeForm);
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnTeacher);
             this.Name = "Welcome";
-            this.Text = "Welcome";
+            this.Text = "Learning Domain Ltd.";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,6 +82,7 @@
 
         private System.Windows.Forms.Button btnTeacher;
         private System.Windows.Forms.Button btnStudent;
+        private System.Windows.Forms.Label lblWelcomeForm;
     }
 }
 
