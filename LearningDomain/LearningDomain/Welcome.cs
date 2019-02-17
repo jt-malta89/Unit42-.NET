@@ -23,5 +23,12 @@ namespace LearningDomain
             myTeacherForm.Show();
             this.Hide();
         }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            StudentForm myStudentForm = new StudentForm();
+            myStudentForm.Show();
+            this.Hide();
+        }
     }
 }

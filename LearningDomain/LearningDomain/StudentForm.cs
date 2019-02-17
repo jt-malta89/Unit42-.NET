@@ -16,5 +16,12 @@ namespace LearningDomain
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Welcome myWelcome = new Welcome();
+            myWelcome.Show();
+            this.Hide();
+        }
     }
 }
