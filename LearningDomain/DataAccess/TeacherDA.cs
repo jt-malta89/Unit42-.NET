@@ -37,7 +37,7 @@ namespace DataAccess
             //Calling the CreateTeacherFolder method to check if the Folder extists to save the teacher file in
             CreateTeacherFolder();
 
-            //setting the file path with file name and extension
+            //Setting the file path with file name and extension
             string targetPath = string.Format(TeacherFolder + "{0}" + TeachersFileTypeExtension, idCardNo);
 
             return targetPath;
