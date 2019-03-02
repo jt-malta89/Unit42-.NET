@@ -464,7 +464,7 @@ namespace LearningDomain
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Welcome myWelcome = new Welcome();
+            WelcomeForm myWelcome = new WelcomeForm();
             myWelcome.Show();
             this.Hide();
         }

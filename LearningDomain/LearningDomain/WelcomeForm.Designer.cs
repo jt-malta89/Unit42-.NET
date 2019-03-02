@@ -1,6 +1,6 @@
 ﻿namespace LearningDomain
 {
-    partial class Welcome
+    partial class WelcomeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -63,7 +63,7 @@
             this.lblWelcomeForm.TabIndex = 65;
             this.lblWelcomeForm.Text = "Welcome";
             // 
-            // Welcome
+            // WelcomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.lblWelcomeForm);
             this.Controls.Add(this.btnStudent);
             this.Controls.Add(this.btnTeacher);
-            this.Name = "Welcome";
+            this.Name = "WelcomeForm";
             this.Text = "Learning Domain Ltd.";
             this.ResumeLayout(false);
             this.PerformLayout();
