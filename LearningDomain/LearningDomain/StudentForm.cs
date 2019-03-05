@@ -468,5 +468,12 @@ namespace LearningDomain
             myWelcome.Show();
             this.Hide();
         }
+
+        private void StudentForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            WelcomeForm myWelcome = new WelcomeForm();
+            myWelcome.Show();
+            this.Hide();
+        }
     }
 }

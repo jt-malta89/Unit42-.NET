@@ -299,6 +299,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "TeacherForm";
             this.Text = "Learning Domain Ltd.";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TeacherForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.erpProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
